@@ -287,9 +287,7 @@ Uses computer vision and pose estimation to guide your yoga practice in real-tim
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shaunak-Rahatekar/Shaunak-Rahatekar/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shaunak-Rahatekar/Shaunak-Rahatekar/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Shaunak-Rahatekar/Shaunak-Rahatekar/output/github-snake-dark.svg" width="100%" />
+  <img alt="github-dragon" src="https://raw.githubusercontent.com/Shaunak-Rahatekar/Shaunak-Rahatekar/output/github-dragon.svg" width="100%" />
 </picture>
 
 </div>

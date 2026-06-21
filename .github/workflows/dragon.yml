@@ -1,4 +1,4 @@
-name: Generate Snake Animation
+name: Generate Dragon Animation
 
 on:
   schedule:
@@ -13,13 +13,19 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Generate GitHub Contribution Snake
-        uses: Platane/snk/svg-only@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+          python-version: '3.x'
+
+      - name: Generate Dragon SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: python .github/scripts/generate_dragon.py
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

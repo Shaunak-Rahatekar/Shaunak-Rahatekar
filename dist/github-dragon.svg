@@ -1,0 +1,425 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg" style="background-color: #0d1117;">
+    <style>
+        .grid {
+            fill: #161b22;
+        }
+        .contrib {
+            animation: burn 10s linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+        @keyframes burn {
+            0% { fill: var(--base-color); transform: scale(1); opacity: 1; }
+            10% { fill: #ff9900; transform: scale(1.2); opacity: 1; }
+            20% { fill: #ff4d4d; transform: scale(0.8); opacity: 0.8; }
+            30% { fill: #1a1a1a; transform: scale(0.2); opacity: 0.2; }
+            80% { fill: #1a1a1a; transform: scale(0.2); opacity: 0.2; }
+            90% { fill: var(--base-color); transform: scale(1); opacity: 1; }
+            100% { fill: var(--base-color); transform: scale(1); opacity: 1; }
+        }
+        .dragon {
+            animation: fly 10s linear infinite;
+            fill: #ff4d4d;
+        }
+        @keyframes fly {
+            0% { transform: translate(-100px, 20px) scale(0.5); }
+            50.0% { transform: translate(850px, 0px) scale(0.5); }
+            100% { transform: translate(850px, 0px) scale(0.5); }
+        }
+        .fire {
+            animation: breathe 10s linear infinite;
+            fill: #ff9900;
+            opacity: 0;
+        }
+        @keyframes breathe {
+            0% { opacity: 0; transform: translate(-100px, 20px) scale(0.5); }
+            5% { opacity: 0.8; transform: translate(0px, 20px) scale(0.5); }
+            50.0% { opacity: 0.8; transform: translate(850px, 0px) scale(0.5); }
+            51.0% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+    </style>
+    
+    <g id="grid">
+            <rect x="29.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.18125s;" />
+        <rect x="29.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.18125s;" />
+        <rect x="29.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.18125s;" />
+        <rect x="29.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 0.18125s;" />
+        <rect x="29.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.18125s;" />
+        <rect x="29.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.18125s;" />
+        <rect x="29.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.18125s;" />
+        <rect x="43.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.26875s;" />
+        <rect x="43.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.26875s;" />
+        <rect x="43.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.26875s;" />
+        <rect x="43.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.26875s;" />
+        <rect x="43.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.26875s;" />
+        <rect x="43.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.26875s;" />
+        <rect x="43.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.26875s;" />
+        <rect x="57.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.35624999999999996s;" />
+        <rect x="57.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.35624999999999996s;" />
+        <rect x="57.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.35624999999999996s;" />
+        <rect x="57.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.35624999999999996s;" />
+        <rect x="57.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.35624999999999996s;" />
+        <rect x="57.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 0.35624999999999996s;" />
+        <rect x="57.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.35624999999999996s;" />
+        <rect x="71.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.44375s;" />
+        <rect x="71.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.44375s;" />
+        <rect x="71.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.44375s;" />
+        <rect x="71.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.44375s;" />
+        <rect x="71.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.44375s;" />
+        <rect x="71.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.44375s;" />
+        <rect x="71.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.44375s;" />
+        <rect x="85.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.53125s;" />
+        <rect x="85.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.53125s;" />
+        <rect x="85.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.53125s;" />
+        <rect x="85.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.53125s;" />
+        <rect x="85.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.53125s;" />
+        <rect x="85.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.53125s;" />
+        <rect x="85.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.53125s;" />
+        <rect x="99.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.61875s;" />
+        <rect x="99.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.61875s;" />
+        <rect x="99.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.61875s;" />
+        <rect x="99.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.61875s;" />
+        <rect x="99.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.61875s;" />
+        <rect x="99.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.61875s;" />
+        <rect x="99.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.61875s;" />
+        <rect x="113.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.7062499999999999s;" />
+        <rect x="113.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.7062499999999999s;" />
+        <rect x="113.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 0.7062499999999999s;" />
+        <rect x="113.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.7062499999999999s;" />
+        <rect x="113.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.7062499999999999s;" />
+        <rect x="113.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.7062499999999999s;" />
+        <rect x="113.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.7062499999999999s;" />
+        <rect x="127.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.79375s;" />
+        <rect x="127.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.79375s;" />
+        <rect x="127.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.79375s;" />
+        <rect x="127.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.79375s;" />
+        <rect x="127.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.79375s;" />
+        <rect x="127.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.79375s;" />
+        <rect x="127.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.79375s;" />
+        <rect x="141.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.88125s;" />
+        <rect x="141.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 0.88125s;" />
+        <rect x="141.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.88125s;" />
+        <rect x="141.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.88125s;" />
+        <rect x="141.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.88125s;" />
+        <rect x="141.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.88125s;" />
+        <rect x="141.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.88125s;" />
+        <rect x="155.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.96875s;" />
+        <rect x="155.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.96875s;" />
+        <rect x="155.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.96875s;" />
+        <rect x="155.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.96875s;" />
+        <rect x="155.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 0.96875s;" />
+        <rect x="155.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 0.96875s;" />
+        <rect x="155.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 0.96875s;" />
+        <rect x="169.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.05625s;" />
+        <rect x="169.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.05625s;" />
+        <rect x="169.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.05625s;" />
+        <rect x="169.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.05625s;" />
+        <rect x="169.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.05625s;" />
+        <rect x="169.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.05625s;" />
+        <rect x="169.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.05625s;" />
+        <rect x="183.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.14375s;" />
+        <rect x="183.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.14375s;" />
+        <rect x="183.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.14375s;" />
+        <rect x="183.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.14375s;" />
+        <rect x="183.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.14375s;" />
+        <rect x="183.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.14375s;" />
+        <rect x="183.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.14375s;" />
+        <rect x="197.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.23125s;" />
+        <rect x="197.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.23125s;" />
+        <rect x="197.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.23125s;" />
+        <rect x="197.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.23125s;" />
+        <rect x="197.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.23125s;" />
+        <rect x="197.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.23125s;" />
+        <rect x="197.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.23125s;" />
+        <rect x="211.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.3187499999999999s;" />
+        <rect x="211.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.3187499999999999s;" />
+        <rect x="211.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.3187499999999999s;" />
+        <rect x="211.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.3187499999999999s;" />
+        <rect x="211.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.3187499999999999s;" />
+        <rect x="211.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.3187499999999999s;" />
+        <rect x="211.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.3187499999999999s;" />
+        <rect x="225.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.40625s;" />
+        <rect x="225.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.40625s;" />
+        <rect x="225.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.40625s;" />
+        <rect x="225.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.40625s;" />
+        <rect x="225.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.40625s;" />
+        <rect x="225.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.40625s;" />
+        <rect x="225.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.40625s;" />
+        <rect x="239.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.4937500000000001s;" />
+        <rect x="239.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.4937500000000001s;" />
+        <rect x="239.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.4937500000000001s;" />
+        <rect x="239.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.4937500000000001s;" />
+        <rect x="239.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.4937500000000001s;" />
+        <rect x="239.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.4937500000000001s;" />
+        <rect x="239.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.4937500000000001s;" />
+        <rect x="253.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.5812499999999998s;" />
+        <rect x="253.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.5812499999999998s;" />
+        <rect x="253.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.5812499999999998s;" />
+        <rect x="253.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.5812499999999998s;" />
+        <rect x="253.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.5812499999999998s;" />
+        <rect x="253.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 1.5812499999999998s;" />
+        <rect x="253.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.5812499999999998s;" />
+        <rect x="267.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.66875s;" />
+        <rect x="267.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.66875s;" />
+        <rect x="267.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.66875s;" />
+        <rect x="267.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.66875s;" />
+        <rect x="267.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.66875s;" />
+        <rect x="267.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 1.66875s;" />
+        <rect x="267.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.66875s;" />
+        <rect x="281.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.75625s;" />
+        <rect x="281.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.75625s;" />
+        <rect x="281.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.75625s;" />
+        <rect x="281.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.75625s;" />
+        <rect x="281.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.75625s;" />
+        <rect x="281.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.75625s;" />
+        <rect x="281.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.75625s;" />
+        <rect x="295.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.84375s;" />
+        <rect x="295.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.84375s;" />
+        <rect x="295.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.84375s;" />
+        <rect x="295.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.84375s;" />
+        <rect x="295.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.84375s;" />
+        <rect x="295.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.84375s;" />
+        <rect x="295.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.84375s;" />
+        <rect x="309.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 1.93125s;" />
+        <rect x="309.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.93125s;" />
+        <rect x="309.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.93125s;" />
+        <rect x="309.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 1.93125s;" />
+        <rect x="309.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.93125s;" />
+        <rect x="309.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 1.93125s;" />
+        <rect x="309.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 1.93125s;" />
+        <rect x="323.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.01875s;" />
+        <rect x="323.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.01875s;" />
+        <rect x="323.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.01875s;" />
+        <rect x="323.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.01875s;" />
+        <rect x="323.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.01875s;" />
+        <rect x="323.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.01875s;" />
+        <rect x="323.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.01875s;" />
+        <rect x="337.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.10625s;" />
+        <rect x="337.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 2.10625s;" />
+        <rect x="337.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.10625s;" />
+        <rect x="337.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.10625s;" />
+        <rect x="337.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.10625s;" />
+        <rect x="337.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.10625s;" />
+        <rect x="337.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.10625s;" />
+        <rect x="351.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 2.1937499999999996s;" />
+        <rect x="351.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.1937499999999996s;" />
+        <rect x="351.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.1937499999999996s;" />
+        <rect x="351.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.1937499999999996s;" />
+        <rect x="351.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.1937499999999996s;" />
+        <rect x="351.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.1937499999999996s;" />
+        <rect x="351.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.1937499999999996s;" />
+        <rect x="365.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.28125s;" />
+        <rect x="365.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.28125s;" />
+        <rect x="365.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.28125s;" />
+        <rect x="365.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.28125s;" />
+        <rect x="365.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 2.28125s;" />
+        <rect x="365.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.28125s;" />
+        <rect x="365.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.28125s;" />
+        <rect x="379.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.36875s;" />
+        <rect x="379.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.36875s;" />
+        <rect x="379.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.36875s;" />
+        <rect x="379.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.36875s;" />
+        <rect x="379.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.36875s;" />
+        <rect x="379.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.36875s;" />
+        <rect x="379.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.36875s;" />
+        <rect x="393.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.4562500000000003s;" />
+        <rect x="393.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.4562500000000003s;" />
+        <rect x="393.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 2.4562500000000003s;" />
+        <rect x="393.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 2.4562500000000003s;" />
+        <rect x="393.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.4562500000000003s;" />
+        <rect x="393.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.4562500000000003s;" />
+        <rect x="393.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.4562500000000003s;" />
+        <rect x="407.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.54375s;" />
+        <rect x="407.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.54375s;" />
+        <rect x="407.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.54375s;" />
+        <rect x="407.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.54375s;" />
+        <rect x="407.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.54375s;" />
+        <rect x="407.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.54375s;" />
+        <rect x="407.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.54375s;" />
+        <rect x="421.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.63125s;" />
+        <rect x="421.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.63125s;" />
+        <rect x="421.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 2.63125s;" />
+        <rect x="421.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.63125s;" />
+        <rect x="421.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.63125s;" />
+        <rect x="421.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.63125s;" />
+        <rect x="421.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.63125s;" />
+        <rect x="435.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.71875s;" />
+        <rect x="435.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.71875s;" />
+        <rect x="435.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.71875s;" />
+        <rect x="435.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.71875s;" />
+        <rect x="435.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.71875s;" />
+        <rect x="435.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 2.71875s;" />
+        <rect x="435.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.71875s;" />
+        <rect x="449.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 2.8062500000000004s;" />
+        <rect x="449.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.8062500000000004s;" />
+        <rect x="449.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.8062500000000004s;" />
+        <rect x="449.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.8062500000000004s;" />
+        <rect x="449.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.8062500000000004s;" />
+        <rect x="449.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.8062500000000004s;" />
+        <rect x="449.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.8062500000000004s;" />
+        <rect x="463.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.89375s;" />
+        <rect x="463.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.89375s;" />
+        <rect x="463.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.89375s;" />
+        <rect x="463.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.89375s;" />
+        <rect x="463.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.89375s;" />
+        <rect x="463.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.89375s;" />
+        <rect x="463.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.89375s;" />
+        <rect x="477.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.9812499999999997s;" />
+        <rect x="477.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.9812499999999997s;" />
+        <rect x="477.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.9812499999999997s;" />
+        <rect x="477.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 2.9812499999999997s;" />
+        <rect x="477.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 2.9812499999999997s;" />
+        <rect x="477.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 2.9812499999999997s;" />
+        <rect x="477.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 2.9812499999999997s;" />
+        <rect x="491.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.06875s;" />
+        <rect x="491.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.06875s;" />
+        <rect x="491.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.06875s;" />
+        <rect x="491.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.06875s;" />
+        <rect x="491.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.06875s;" />
+        <rect x="491.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.06875s;" />
+        <rect x="491.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.06875s;" />
+        <rect x="505.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.15625s;" />
+        <rect x="505.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 3.15625s;" />
+        <rect x="505.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.15625s;" />
+        <rect x="505.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.15625s;" />
+        <rect x="505.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.15625s;" />
+        <rect x="505.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.15625s;" />
+        <rect x="505.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.15625s;" />
+        <rect x="519.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.2437500000000004s;" />
+        <rect x="519.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.2437500000000004s;" />
+        <rect x="519.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.2437500000000004s;" />
+        <rect x="519.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.2437500000000004s;" />
+        <rect x="519.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.2437500000000004s;" />
+        <rect x="519.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.2437500000000004s;" />
+        <rect x="519.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.2437500000000004s;" />
+        <rect x="533.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.33125s;" />
+        <rect x="533.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.33125s;" />
+        <rect x="533.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.33125s;" />
+        <rect x="533.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.33125s;" />
+        <rect x="533.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.33125s;" />
+        <rect x="533.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.33125s;" />
+        <rect x="533.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.33125s;" />
+        <rect x="547.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.4187499999999997s;" />
+        <rect x="547.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.4187499999999997s;" />
+        <rect x="547.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.4187499999999997s;" />
+        <rect x="547.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.4187499999999997s;" />
+        <rect x="547.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.4187499999999997s;" />
+        <rect x="547.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.4187499999999997s;" />
+        <rect x="547.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.4187499999999997s;" />
+        <rect x="561.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.50625s;" />
+        <rect x="561.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.50625s;" />
+        <rect x="561.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.50625s;" />
+        <rect x="561.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.50625s;" />
+        <rect x="561.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.50625s;" />
+        <rect x="561.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 3.50625s;" />
+        <rect x="561.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.50625s;" />
+        <rect x="575.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 3.59375s;" />
+        <rect x="575.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.59375s;" />
+        <rect x="575.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.59375s;" />
+        <rect x="575.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.59375s;" />
+        <rect x="575.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.59375s;" />
+        <rect x="575.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.59375s;" />
+        <rect x="575.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.59375s;" />
+        <rect x="589.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 3.68125s;" />
+        <rect x="589.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.68125s;" />
+        <rect x="589.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.68125s;" />
+        <rect x="589.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.68125s;" />
+        <rect x="589.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.68125s;" />
+        <rect x="589.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.68125s;" />
+        <rect x="589.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.68125s;" />
+        <rect x="603.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.7687500000000003s;" />
+        <rect x="603.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.7687500000000003s;" />
+        <rect x="603.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.7687500000000003s;" />
+        <rect x="603.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.7687500000000003s;" />
+        <rect x="603.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.7687500000000003s;" />
+        <rect x="603.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.7687500000000003s;" />
+        <rect x="603.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.7687500000000003s;" />
+        <rect x="617.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.85625s;" />
+        <rect x="617.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.85625s;" />
+        <rect x="617.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.85625s;" />
+        <rect x="617.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.85625s;" />
+        <rect x="617.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.85625s;" />
+        <rect x="617.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.85625s;" />
+        <rect x="617.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.85625s;" />
+        <rect x="631.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.9437499999999996s;" />
+        <rect x="631.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.9437499999999996s;" />
+        <rect x="631.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 3.9437499999999996s;" />
+        <rect x="631.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.9437499999999996s;" />
+        <rect x="631.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.9437499999999996s;" />
+        <rect x="631.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 3.9437499999999996s;" />
+        <rect x="631.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 3.9437499999999996s;" />
+        <rect x="645.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.03125s;" />
+        <rect x="645.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.03125s;" />
+        <rect x="645.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.03125s;" />
+        <rect x="645.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.03125s;" />
+        <rect x="645.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.03125s;" />
+        <rect x="645.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.03125s;" />
+        <rect x="645.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.03125s;" />
+        <rect x="659.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.11875s;" />
+        <rect x="659.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.11875s;" />
+        <rect x="659.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 4.11875s;" />
+        <rect x="659.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.11875s;" />
+        <rect x="659.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.11875s;" />
+        <rect x="659.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.11875s;" />
+        <rect x="659.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.11875s;" />
+        <rect x="673.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.206250000000001s;" />
+        <rect x="673.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.206250000000001s;" />
+        <rect x="673.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.206250000000001s;" />
+        <rect x="673.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.206250000000001s;" />
+        <rect x="673.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 4.206250000000001s;" />
+        <rect x="673.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.206250000000001s;" />
+        <rect x="673.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.206250000000001s;" />
+        <rect x="687.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.29375s;" />
+        <rect x="687.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.29375s;" />
+        <rect x="687.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.29375s;" />
+        <rect x="687.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.29375s;" />
+        <rect x="687.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.29375s;" />
+        <rect x="687.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.29375s;" />
+        <rect x="687.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.29375s;" />
+        <rect x="701.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.38125s;" />
+        <rect x="701.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.38125s;" />
+        <rect x="701.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.38125s;" />
+        <rect x="701.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.38125s;" />
+        <rect x="701.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.38125s;" />
+        <rect x="701.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.38125s;" />
+        <rect x="701.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.38125s;" />
+        <rect x="715.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.46875s;" />
+        <rect x="715.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.46875s;" />
+        <rect x="715.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.46875s;" />
+        <rect x="715.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.46875s;" />
+        <rect x="715.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.46875s;" />
+        <rect x="715.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.46875s;" />
+        <rect x="715.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.46875s;" />
+        <rect x="729.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.55625s;" />
+        <rect x="729.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.55625s;" />
+        <rect x="729.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.55625s;" />
+        <rect x="729.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.55625s;" />
+        <rect x="729.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.55625s;" />
+        <rect x="729.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.55625s;" />
+        <rect x="729.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.55625s;" />
+        <rect x="743.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.64375s;" />
+        <rect x="743.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.64375s;" />
+        <rect x="743.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.64375s;" />
+        <rect x="743.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.64375s;" />
+        <rect x="743.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.64375s;" />
+        <rect x="743.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.64375s;" />
+        <rect x="743.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #39d353; fill: #39d353; animation-delay: 4.64375s;" />
+        <rect x="757.0" y="60" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #006d32; fill: #006d32; animation-delay: 4.73125s;" />
+        <rect x="757.0" y="74" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.73125s;" />
+        <rect x="757.0" y="88" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.73125s;" />
+        <rect x="757.0" y="102" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #0e4429; fill: #0e4429; animation-delay: 4.73125s;" />
+        <rect x="757.0" y="116" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.73125s;" />
+        <rect x="757.0" y="130" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #161b22; fill: #161b22; animation-delay: 4.73125s;" />
+        <rect x="757.0" y="144" width="10" height="10" rx="2" class="contrib grid" style="--base-color: #26a641; fill: #26a641; animation-delay: 4.73125s;" />
+    </g>
+
+    <g class="fire">
+        <path d="M 90,60 Q 150,40 200,60 Q 150,80 90,60 Z" fill="#ff9900" opacity="0.6"/>
+        <path d="M 90,60 Q 130,50 160,60 Q 130,70 90,60 Z" fill="#ffcc00" opacity="0.8"/>
+    </g>
+    
+    <g class="dragon">
+        <path d="M46.7,26.4c0,0-15.5-8.5-22.5-3.5c-7,5,0,26.1,0,26.1s-10-8.8-11.5-6.8c-1.5,2,4,21.6,4,21.6s-18.1-15.1-18.1-12c0,3.1,16.6,26.6,16.6,26.6s-18.6-1.5-17.6,1.5c1,3,27.1,19.1,27.1,19.1s-15.1,14.6-12.6,16.6c2.5,2,19.6-12.6,19.6-12.6s2.5,24.1,5.5,23.1c3-1,5-24.1,5-24.1s14.6,16.6,17.6,14.6c3-2-8.5-23.1-8.5-23.1s27.1,8.5,28.1,5.5c1-3-12.6-19.1-12.6-19.1s24.1-3.5,23.1-6.5c-1-3-22.1-1.5-22.1-1.5s15.6-21.6,13.6-24.1C80.3,45,61.7,59.5,61.7,59.5S66.3,37.4,63.2,36C60.2,34.5,46.7,26.4,46.7,26.4z" fill="#ff4d4d" transform="translate(0, 0) scale(1.5)" />
+    </g>
+    </svg>
