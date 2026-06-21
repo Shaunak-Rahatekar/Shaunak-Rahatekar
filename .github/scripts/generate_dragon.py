@@ -124,23 +124,48 @@ def generate_svg(calendar_data):
             animation: fly {anim_duration}s linear infinite;
         }}
         @keyframes fly {{
-            0% {{ transform: translate(-150px, -20px); }}
-            {fly_duration / anim_duration * 100}% {{ transform: translate({svg_width + 50}px, -20px); }}
-            100% {{ transform: translate({svg_width + 50}px, -20px); }}
+            0% {{ transform: translate(-160px, -30px); }}
+            {fly_duration / anim_duration * 100}% {{ transform: translate({svg_width + 50}px, -30px); }}
+            100% {{ transform: translate({svg_width + 50}px, -30px); }}
         }}
         .fire {{
             animation: breathe {anim_duration}s linear infinite;
             fill: #ff9900;
             opacity: 0;
-            transform-origin: left center;
+            transform-origin: center;
         }}
         @keyframes breathe {{
-            0% {{ opacity: 0; transform: translate(-100px, 60px) scaleX(0); }}
-            1% {{ opacity: 0.8; transform: translate(-80px, 60px) scaleX(1); }}
-            {fly_duration / anim_duration * 100}% {{ opacity: 0.8; transform: translate({svg_width + 70}px, 60px) scaleX(1); }}
-            {(fly_duration / anim_duration * 100) + 1}% {{ opacity: 0; transform: translate({svg_width + 80}px, 60px) scaleX(0); }}
+            0% {{ opacity: 0; transform: translate(-160px, -30px); }}
+            1% {{ opacity: 0.8; transform: translate(-160px, -30px); }}
+            {fly_duration / anim_duration * 100}% {{ opacity: 0.8; transform: translate({svg_width + 50}px, -30px); }}
+            {(fly_duration / anim_duration * 100) + 1}% {{ opacity: 0; }}
             100% {{ opacity: 0; }}
         }}
+    '''
+    
+    # Generate dynamic keyframes for each of the 371 cells
+    total_cells = 53 * 7
+    for i in range(total_cells):
+        hit_pct = (i / total_cells) * (fly_duration / anim_duration * 100)
+        svg += f'''
+        @keyframes burn-{i} {{
+            0% {{ fill: var(--base-color); transform: scale(1); opacity: 1; }}
+            {hit_pct:.2f}% {{ fill: var(--base-color); transform: scale(1); opacity: 1; }}
+            {min(hit_pct + 1, 95):.2f}% {{ fill: #ff9900; transform: scale(1.2); opacity: 1; }}
+            {min(hit_pct + 2, 95):.2f}% {{ fill: #ff4d4d; transform: scale(0.8); opacity: 0.8; }}
+            {min(hit_pct + 3, 95):.2f}% {{ fill: #1a1a1a; transform: scale(0.2); opacity: 0.2; }}
+            95% {{ fill: #1a1a1a; transform: scale(0.2); opacity: 0.2; }}
+            98% {{ fill: var(--base-color); transform: scale(1); opacity: 1; }}
+            100% {{ fill: var(--base-color); transform: scale(1); opacity: 1; }}
+        }}
+        .contrib-{i} {{
+            animation: burn-{i} {anim_duration}s linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }}
+        '''
+
+    svg += '''
     </style>
     
     <g id="grid">
@@ -154,31 +179,34 @@ def generate_svg(calendar_data):
             count = day['contributionCount']
             color = get_color(count)
             
-            # Snake index logic: down even columns, up odd columns
             if c % 2 == 0:
                 snake_idx = c * 7 + r
             else:
                 snake_idx = c * 7 + (6 - r)
                 
-            delay = snake_idx * time_per_cell
-            
-            svg += f'        <rect x="{x}" y="{y}" width="{square_size}" height="{square_size}" rx="2" class="contrib grid" style="--base-color: {color}; fill: {color}; animation-delay: {delay}s;" />\n'
+            svg += f'        <rect x="{x}" y="{y}" width="{square_size}" height="{square_size}" rx="2" class="contrib-{snake_idx} grid" style="--base-color: {color}; fill: {color};" />\n'
             
     svg += '    </g>\n'
     
     # Fire breath connecting dragon to the burning square
+    # Origin of fire is set to roughly Charizard's mouth when flipped (x=130, y=70)
+    # The fire blasts downwards towards the grid
     svg += f'''
     <g class="fire">
-        <path d="M 0,40 Q 60,20 120,40 Q 60,60 0,40 Z" fill="#ff9900" opacity="0.6"/>
-        <path d="M 0,40 Q 40,30 80,40 Q 40,50 0,40 Z" fill="#ffcc00" opacity="0.8"/>
+        <path d="M 130,70 L 80,140 Q 110,160 140,140 Z" fill="#ff9900" opacity="0.7"/>
+        <path d="M 130,70 L 95,130 Q 115,145 130,130 Z" fill="#ffcc00" opacity="0.9"/>
+        <path d="M 130,70 L 110,120 Q 120,130 130,120 Z" fill="#ffffff" opacity="0.9"/>
     </g>
     '''
     
     # Insert Dragon Image
     if dragon_base64:
+        # Flip the image horizontally so it faces right (translating by -160 to offset the scale flip)
         svg += f'''
     <g class="dragon">
-        <image href="{dragon_base64}" x="0" y="0" width="160" height="160" preserveAspectRatio="xMidYMid slice"/>
+        <g transform="scale(-1, 1) translate(-160, 0)">
+            <image href="{dragon_base64}" x="0" y="0" width="160" height="160" preserveAspectRatio="xMidYMid slice"/>
+        </g>
     </g>
     '''
     else:
