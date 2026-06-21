@@ -188,18 +188,7 @@ def generate_svg(calendar_data):
             
     svg += '    </g>\n'
     
-    # Fire breath connecting dragon to the burning square
-    # Origin of fire is set to roughly Charizard's mouth when flipped (x=130, y=70)
-    # The fire blasts downwards towards the grid
-    svg += f'''
-    <g class="fire">
-        <path d="M 130,70 L 80,140 Q 110,160 140,140 Z" fill="#ff9900" opacity="0.7"/>
-        <path d="M 130,70 L 95,130 Q 115,145 130,130 Z" fill="#ffcc00" opacity="0.9"/>
-        <path d="M 130,70 L 110,120 Q 120,130 130,120 Z" fill="#ffffff" opacity="0.9"/>
-    </g>
-    '''
-    
-    # Insert Dragon Image
+    # Insert Dragon Image FIRST so fire draws on top!
     if dragon_base64:
         # Flip the image horizontally so it faces right (translating by -160 to offset the scale flip)
         svg += f'''
@@ -216,7 +205,23 @@ def generate_svg(calendar_data):
         <path d="M46.7,26.4c0,0-15.5-8.5-22.5-3.5c-7,5,0,26.1,0,26.1s-10-8.8-11.5-6.8c-1.5,2,4,21.6,4,21.6s-18.1-15.1-18.1-12c0,3.1,16.6,26.6,16.6,26.6s-18.6-1.5-17.6,1.5c1,3,27.1,19.1,27.1,19.1s-15.1,14.6-12.6,16.6c2.5,2,19.6-12.6,19.6-12.6s2.5,24.1,5.5,23.1c3-1,5-24.1,5-24.1s14.6,16.6,17.6,14.6c3-2-8.5-23.1-8.5-23.1s27.1,8.5,28.1,5.5c1-3-12.6-19.1-12.6-19.1s24.1-3.5,23.1-6.5c-1-3-22.1-1.5-22.1-1.5s15.6-21.6,13.6-24.1C80.3,45,61.7,59.5,61.7,59.5S66.3,37.4,63.2,36C60.2,34.5,46.7,26.4,46.7,26.4z" fill="#00ff00" transform="translate(40, 60) scale(1.5)" />
     </g>
     '''
-        
+
+    # Fire breath connecting dragon to the burning square
+    # Origin of fire is set to roughly Charizard's mouth when flipped (x=130, y=70)
+    # The fire blasts downwards diagonally left towards the grid
+    svg += f'''
+    <g class="fire">
+        <g style="animation: flicker 0.1s infinite alternate; transform-origin: 125px 75px;">
+            <!-- Outer red/orange blast -->
+            <path d="M 125,75 L 90,100 L 105,115 L 70,140 L 95,150 L 50,180 L 85,180 L 60,210 L 100,195 L 120,210 L 130,175 L 155,160 L 145,130 L 160,105 L 135,90 Z" fill="#ff4d00" opacity="0.9"/>
+            <!-- Inner yellow core -->
+            <path d="M 125,75 L 105,100 L 115,110 L 85,130 L 105,140 L 75,165 L 95,165 L 80,185 L 110,175 L 120,185 L 125,160 L 140,150 L 135,130 L 145,110 L 130,95 Z" fill="#ffcc00" opacity="1"/>
+            <!-- White hot center -->
+            <path d="M 125,75 L 115,100 L 120,110 L 105,125 L 115,130 L 95,150 L 110,145 L 120,155 L 125,140 L 135,135 L 130,120 L 140,105 L 130,95 Z" fill="#ffffff" opacity="1"/>
+        </g>
+    </g>
+    '''
+    
     svg += '</svg>'
     return svg
 
