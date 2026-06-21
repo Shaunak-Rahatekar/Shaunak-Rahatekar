@@ -135,9 +135,9 @@ def generate_svg(calendar_data):
             transform-origin: center;
         }}
         @keyframes breathe {{
-            0% {{ opacity: 0; transform: translate(-160px, -30px); }}
-            1% {{ opacity: 0.8; transform: translate(-160px, -30px); }}
-            {fly_duration / anim_duration * 100}% {{ opacity: 0.8; transform: translate({svg_width + 50}px, -30px); }}
+            0% {{ opacity: 0; transform: translate(-135px, -45px); }}
+            1% {{ opacity: 0.8; transform: translate(-135px, -45px); }}
+            {fly_duration / anim_duration * 100}% {{ opacity: 0.8; transform: translate({svg_width + 75}px, -45px); }}
             {(fly_duration / anim_duration * 100) + 1}% {{ opacity: 0; }}
             100% {{ opacity: 0; }}
         }}
