@@ -217,17 +217,19 @@ def generate_svg(calendar_data):
     </g>
     '''
 
-    # Live Flamethrower effect using the exact jagged shape requested!
-    # Translates to dragon's mouth (x=95, y=40) relative to the 110x110 bounding box, 
-    # and rotates 115 degrees to point down and left towards the squares.
+    # Fire breath — narrow stream shooting DOWN from Charizard's mouth toward the grid
+    # The dragon is flipped to face RIGHT. Its mouth is at roughly x=100, y=22 in the 110x110 box.
+    # rotate(40) aims the stream down-right toward the contribution squares below.
     svg += f'''
     <g class="fire">
-        <g transform="translate(95, 40) rotate(115)">
+        <g transform="translate(100, 22) rotate(40)">
             <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
-                <!-- Outer jagged orange blast -->
-                <path d="M 0,0 L 20,-10 L 40,-5 L 50,-20 L 70,-15 L 80,-35 L 110,-20 L 130,-40 L 140,-10 L 120,5 L 140,25 L 120,30 L 130,50 L 100,45 L 90,65 L 70,50 L 60,70 L 40,40 L 20,20 Z" fill="#ff4d00" opacity="0.95"/>
-                <!-- Inner jagged yellow core -->
-                <path d="M 10,0 L 30,-5 L 40,-15 L 60,-10 L 70,-25 L 90,-15 L 100,-30 L 110,-10 L 95,0 L 110,15 L 95,20 L 100,35 L 80,30 L 70,45 L 55,35 L 45,50 L 30,25 L 15,10 Z" fill="#ffcc00" opacity="1"/>
+                <!-- Outer orange stream — narrow and directional -->
+                <path d="M 0,-4 L 15,-8 L 30,-6 L 45,-12 L 60,-8 L 75,-14 L 85,-6 L 75,0 L 85,8 L 75,14 L 60,8 L 45,12 L 30,6 L 15,8 Z" fill="#ff4d00" opacity="0.95"/>
+                <!-- Inner yellow core -->
+                <path d="M 0,-2 L 15,-5 L 30,-3 L 45,-7 L 55,-4 L 60,0 L 55,4 L 45,7 L 30,3 L 15,5 Z" fill="#ffcc00" opacity="1"/>
+                <!-- White hot tip -->
+                <path d="M 0,-1 L 10,-3 L 20,0 L 10,3 Z" fill="#ffffff" opacity="0.9"/>
             </g>
         </g>
     </g>
