@@ -198,7 +198,7 @@ def generate_svg(calendar_data):
             <image href="{dragon_base64}" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
         </g>
         <!-- Fire breath from mouth, nested inside dragon group for perfect alignment -->
-        <g transform="translate(90, 25) rotate(40)">
+        <g transform="translate(85, 45) rotate(35)">
             <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
                 <path d="M 0,-4 L 15,-8 L 30,-6 L 45,-12 L 60,-8 L 75,-14 L 85,-6 L 75,0 L 85,8 L 75,14 L 60,8 L 45,12 L 30,6 L 15,8 Z" fill="#ff4d00" opacity="0.95"/>
                 <path d="M 0,-2 L 15,-5 L 30,-3 L 45,-7 L 55,-4 L 60,0 L 55,4 L 45,7 L 30,3 L 15,5 Z" fill="#ffcc00" opacity="1"/>
