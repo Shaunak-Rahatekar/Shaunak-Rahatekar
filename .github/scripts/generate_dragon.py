@@ -167,8 +167,8 @@ def generate_svg(calendar_data):
         svg += f'''
     <g class="dragon">
         <!-- Dragon image with embedded fire -->
-        <g transform="scale(-1, 1) translate(-150, 0)">
-            <image href="{dragon_base64}" x="0" y="0" width="150" height="150" preserveAspectRatio="xMidYMid slice"/>
+        <g transform="translate(-250, 0)">
+            <image href="{dragon_base64}" x="0" y="0" width="250" height="100" preserveAspectRatio="xMidYMid slice"/>
         </g>
     </g>
     '''
