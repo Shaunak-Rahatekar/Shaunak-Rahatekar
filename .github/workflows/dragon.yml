@@ -25,7 +25,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-        run: python .github/scripts/generate_dragon.py
+        run: |
+          python .github/scripts/generate_dragon.py
+          python .github/scripts/generate_typing.py
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

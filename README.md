@@ -5,7 +5,7 @@
 
 <!-- ANIMATED NAME with typing effect -->
 <a href="https://github.com/Shaunak-Rahatekar">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%E2%9C%A8+Hey%2C+I'm+Shaunak+Rahatekar;Builder+%7C+Dreamer+%7C+Code+Alchemist+%F0%9F%A7%AA" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=%E2%9C%A8+Hey%2C+I'm+Shaunak+Rahatekar;Builder+%7C+Dreamer+%7C+Code+Alchemist+%F0%9F%A7%AA" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -15,19 +15,9 @@
 <tr>
 <td>
 
-```js
-const shaunak = {
-    role: "Student & Aspiring Developer",
-    passions: ["AI × Wellness", "Cross-Platform Apps", "Full-Stack Magic"],
-    motto: "I don't just write code — I craft experiences.",
-    currently: {
-        building: "AI-powered apps that improve lives",
-        learning: "ML pipelines & cloud architecture",
-        exploring: "the intersection of tech & mindfulness"
-    },
-    funFact: "I've built more yoga AI apps than yoga poses I can do 🧘"
-};
-```
+<picture>
+  <img alt="typing-js" src="https://raw.githubusercontent.com/Shaunak-Rahatekar/Shaunak-Rahatekar/output/typing-js.svg" width="100%" />
+</picture>
 
 </td>
 </tr>
