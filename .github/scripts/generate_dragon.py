@@ -115,6 +115,7 @@ def generate_svg(calendar_data):
         /* Fire is nested inside dragon group — no separate animation needed */
         
         /* Live fire effects */
+        .fire-bob {{ animation: fire-bob 1.4s infinite ease-in-out; }}
         .flame-outer {{ animation: flicker1 0.15s infinite alternate; transform-origin: 0 0; }}
         .flame-inner {{ animation: flicker2 0.12s infinite alternate; transform-origin: 0 0; }}
         .flame-core {{ animation: flicker1 0.1s infinite alternate; transform-origin: 0 0; }}
@@ -122,6 +123,11 @@ def generate_svg(calendar_data):
         .fireball-2 {{ animation: shoot2 0.25s infinite linear; }}
         .fireball-3 {{ animation: shoot3 0.35s infinite linear; }}
         
+        @keyframes fire-bob {{
+            0% {{ transform: translate(95px, 45px) rotate(35deg); }}
+            50% {{ transform: translate(100px, 45px) rotate(35deg); }}
+            100% {{ transform: translate(95px, 45px) rotate(35deg); }}
+        }}
         @keyframes flicker1 {{
             0% {{ transform: scaleX(0.8) scaleY(0.9); opacity: 0.8; }}
             100% {{ transform: scaleX(1.1) scaleY(1.1); opacity: 1; }}
@@ -198,7 +204,8 @@ def generate_svg(calendar_data):
             <image href="{dragon_base64}" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
         </g>
         <!-- Fire breath from mouth, nested inside dragon group for perfect alignment -->
-        <g transform="translate(85, 45) rotate(35)">
+        <!-- Starts slightly ahead of the mouth (x=95) and bobs back and forth to match GIF -->
+        <g class="fire-bob">
             <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
                 <path d="M 0,-4 L 15,-8 L 30,-6 L 45,-12 L 60,-8 L 75,-14 L 85,-6 L 75,0 L 85,8 L 75,14 L 60,8 L 45,12 L 30,6 L 15,8 Z" fill="#ff4d00" opacity="0.95"/>
                 <path d="M 0,-2 L 15,-5 L 30,-3 L 45,-7 L 55,-4 L 60,0 L 55,4 L 45,7 L 30,3 L 15,5 Z" fill="#ffcc00" opacity="1"/>
