@@ -117,10 +117,21 @@ def generate_svg(calendar_data):
         /* Fire effects are now built directly into the GIF! */
     '''
     
+    # Math to sync the burning squares with the dragon's physical position
+    dragon_start_x = -250
+    dragon_end_x = 850  # 800 + 50
+    fire_tip_offset = 250  # Fire is at the right edge of the 250px image
+    fire_start_x = dragon_start_x + fire_tip_offset
+    fire_travel_dist = dragon_end_x - dragon_start_x
+    
     # Generate dynamic keyframes for each of the 371 cells
     total_cells = 53 * 7
     for i in range(total_cells):
-        hit_pct = (i / total_cells) * (fly_duration / anim_duration * 100)
+        # Calculate exactly when the fire tip hits this specific cell
+        c = i // 7
+        x_cell = offset_x + c * step
+        t_burn_fraction = (x_cell - fire_start_x) / fire_travel_dist
+        hit_pct = t_burn_fraction * (fly_duration / anim_duration * 100)
         svg += f'''
         @keyframes burn-{i} {{
             0% {{ fill: var(--base-color); transform: scale(1); opacity: 1; }}
