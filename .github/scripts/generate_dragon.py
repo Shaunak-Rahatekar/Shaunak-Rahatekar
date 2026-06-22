@@ -218,11 +218,11 @@ def generate_svg(calendar_data):
     '''
 
     # Fire breath — narrow stream shooting DOWN from Charizard's mouth toward the grid
-    # The dragon is flipped to face RIGHT. Its mouth is at roughly x=100, y=22 in the 110x110 box.
+    # The dragon is flipped to face RIGHT. After the flip, the mouth lands at roughly x=75, y=22.
     # rotate(40) aims the stream down-right toward the contribution squares below.
     svg += f'''
     <g class="fire">
-        <g transform="translate(100, 22) rotate(40)">
+        <g transform="translate(75, 22) rotate(40)">
             <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
                 <!-- Outer orange stream — narrow and directional -->
                 <path d="M 0,-4 L 15,-8 L 30,-6 L 45,-12 L 60,-8 L 75,-14 L 85,-6 L 75,0 L 85,8 L 75,14 L 60,8 L 45,12 L 30,6 L 15,8 Z" fill="#ff4d00" opacity="0.95"/>
