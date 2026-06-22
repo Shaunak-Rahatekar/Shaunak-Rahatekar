@@ -218,11 +218,11 @@ def generate_svg(calendar_data):
     '''
 
     # Live Flamethrower effect!
-    # Translates to dragon's mouth (x=95, y=40) relative to the 110x110 bounding box, 
+    # Translates to dragon's mouth (x=95, y=45) relative to the 110x110 bounding box, 
     # and rotates 115 degrees to point down and left towards the squares.
     svg += f'''
     <g class="fire">
-        <g transform="translate(95, 40) rotate(115)">
+        <g transform="translate(95, 45) rotate(115)">
             <path class="flame-outer" d="M 0,-20 Q 50,-35 130,0 Q 50,35 0,20 Z" fill="#ff4d00" />
             <path class="flame-inner" d="M 0,-12 Q 40,-20 100,0 Q 40,20 0,12 Z" fill="#ffcc00" />
             <path class="flame-core" d="M 0,-6 Q 25,-10 60,0 Q 25,10 0,6 Z" fill="#ffffff" />
