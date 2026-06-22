@@ -108,9 +108,9 @@ def generate_svg(calendar_data):
             animation: fly {anim_duration}s linear infinite;
         }}
         @keyframes fly {{
-            0% {{ transform: translate(-130px, -10px); }}
-            {fly_duration / anim_duration * 100}% {{ transform: translate({svg_width + 50}px, -10px); }}
-            100% {{ transform: translate({svg_width + 50}px, -10px); }}
+            0% {{ transform: translate(-250px, 30px); }}
+            {fly_duration / anim_duration * 100}% {{ transform: translate({svg_width + 50}px, 30px); }}
+            100% {{ transform: translate({svg_width + 50}px, 30px); }}
         }}
         /* Fire is nested inside dragon group — no separate animation needed */
         
@@ -167,9 +167,7 @@ def generate_svg(calendar_data):
         svg += f'''
     <g class="dragon">
         <!-- Dragon image with embedded fire -->
-        <g transform="translate(-250, 0)">
-            <image href="{dragon_base64}" x="0" y="0" width="250" height="100" preserveAspectRatio="xMidYMid slice"/>
-        </g>
+        <image href="{dragon_base64}" x="0" y="0" width="250" height="100" preserveAspectRatio="xMidYMid slice"/>
     </g>
     '''
     else:
