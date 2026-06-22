@@ -112,17 +112,7 @@ def generate_svg(calendar_data):
             {fly_duration / anim_duration * 100}% {{ transform: translate({svg_width + 50}px, -10px); }}
             100% {{ transform: translate({svg_width + 50}px, -10px); }}
         }}
-        .fire {{
-            animation: breathe {anim_duration}s linear infinite;
-            opacity: 0;
-        }}
-        @keyframes breathe {{
-            0% {{ opacity: 0; transform: translate(-130px, -10px); }}
-            1% {{ opacity: 0.8; transform: translate(-130px, -10px); }}
-            {fly_duration / anim_duration * 100}% {{ opacity: 0.8; transform: translate({svg_width + 50}px, -10px); }}
-            {(fly_duration / anim_duration * 100) + 1}% {{ opacity: 0; }}
-            100% {{ opacity: 0; }}
-        }}
+        /* Fire is nested inside dragon group — no separate animation needed */
         
         /* Live fire effects */
         .flame-outer {{ animation: flicker1 0.15s infinite alternate; transform-origin: 0 0; }}
@@ -199,39 +189,28 @@ def generate_svg(calendar_data):
             
     svg += '    </g>\n'
     
-    # Insert Dragon Image (scaled down to 110x110) FIRST so fire draws on top!
+    # Dragon + Fire in ONE group so they share the same fly animation
     if dragon_base64:
-        # Flip the image horizontally so it faces right (translating by -110 to offset the scale flip)
         svg += f'''
     <g class="dragon">
+        <!-- Dragon image, flipped to face right -->
         <g transform="scale(-1, 1) translate(-110, 0)">
             <image href="{dragon_base64}" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
+        </g>
+        <!-- Fire breath from mouth, nested inside dragon group for perfect alignment -->
+        <g transform="translate(90, 25) rotate(40)">
+            <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
+                <path d="M 0,-4 L 15,-8 L 30,-6 L 45,-12 L 60,-8 L 75,-14 L 85,-6 L 75,0 L 85,8 L 75,14 L 60,8 L 45,12 L 30,6 L 15,8 Z" fill="#ff4d00" opacity="0.95"/>
+                <path d="M 0,-2 L 15,-5 L 30,-3 L 45,-7 L 55,-4 L 60,0 L 55,4 L 45,7 L 30,3 L 15,5 Z" fill="#ffcc00" opacity="1"/>
+                <path d="M 0,-1 L 10,-3 L 20,0 L 10,3 Z" fill="#ffffff" opacity="0.9"/>
+            </g>
         </g>
     </g>
     '''
     else:
-        # Fallback
         svg += '''
     <g class="dragon">
         <rect width="110" height="110" fill="red" />
-    </g>
-    '''
-
-    # Fire breath — narrow stream shooting DOWN from Charizard's mouth toward the grid
-    # The dragon is flipped to face RIGHT. After the flip, the mouth lands at roughly x=75, y=22.
-    # rotate(40) aims the stream down-right toward the contribution squares below.
-    svg += f'''
-    <g class="fire">
-        <g transform="translate(75, 22) rotate(40)">
-            <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
-                <!-- Outer orange stream — narrow and directional -->
-                <path d="M 0,-4 L 15,-8 L 30,-6 L 45,-12 L 60,-8 L 75,-14 L 85,-6 L 75,0 L 85,8 L 75,14 L 60,8 L 45,12 L 30,6 L 15,8 Z" fill="#ff4d00" opacity="0.95"/>
-                <!-- Inner yellow core -->
-                <path d="M 0,-2 L 15,-5 L 30,-3 L 45,-7 L 55,-4 L 60,0 L 55,4 L 45,7 L 30,3 L 15,5 Z" fill="#ffcc00" opacity="1"/>
-                <!-- White hot tip -->
-                <path d="M 0,-1 L 10,-3 L 20,0 L 10,3 Z" fill="#ffffff" opacity="0.9"/>
-            </g>
-        </g>
     </g>
     '''
     
