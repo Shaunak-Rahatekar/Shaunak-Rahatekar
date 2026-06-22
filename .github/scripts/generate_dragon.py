@@ -217,20 +217,18 @@ def generate_svg(calendar_data):
     </g>
     '''
 
-    # Live Flamethrower effect!
-    # Translates to dragon's mouth (x=95, y=45) relative to the 110x110 bounding box, 
+    # Live Flamethrower effect using the exact jagged shape requested!
+    # Translates to dragon's mouth (x=95, y=40) relative to the 110x110 bounding box, 
     # and rotates 115 degrees to point down and left towards the squares.
     svg += f'''
     <g class="fire">
-        <g transform="translate(95, 45) rotate(115)">
-            <path class="flame-outer" d="M 0,-20 Q 50,-35 130,0 Q 50,35 0,20 Z" fill="#ff4d00" />
-            <path class="flame-inner" d="M 0,-12 Q 40,-20 100,0 Q 40,20 0,12 Z" fill="#ffcc00" />
-            <path class="flame-core" d="M 0,-6 Q 25,-10 60,0 Q 25,10 0,6 Z" fill="#ffffff" />
-            <circle class="fireball-1" cx="60" cy="0" r="8" fill="#ff9900" />
-            <circle class="fireball-2" cx="90" cy="15" r="5" fill="#ff4d00" />
-            <circle class="fireball-3" cx="80" cy="-15" r="6" fill="#ffcc00" />
-            <circle class="fireball-1" cx="40" cy="-5" r="10" fill="#ffcc00" style="animation-delay: 0.1s;" />
-            <circle class="fireball-2" cx="70" cy="5" r="7" fill="#ffffff" style="animation-delay: 0.15s;" />
+        <g transform="translate(95, 40) rotate(115)">
+            <g style="animation: flicker1 0.15s infinite alternate; transform-origin: 0 0;">
+                <!-- Outer jagged orange blast -->
+                <path d="M 0,0 L 20,-10 L 40,-5 L 50,-20 L 70,-15 L 80,-35 L 110,-20 L 130,-40 L 140,-10 L 120,5 L 140,25 L 120,30 L 130,50 L 100,45 L 90,65 L 70,50 L 60,70 L 40,40 L 20,20 Z" fill="#ff4d00" opacity="0.95"/>
+                <!-- Inner jagged yellow core -->
+                <path d="M 10,0 L 30,-5 L 40,-15 L 60,-10 L 70,-25 L 90,-15 L 100,-30 L 110,-10 L 95,0 L 110,15 L 95,20 L 100,35 L 80,30 L 70,45 L 55,35 L 45,50 L 30,25 L 15,10 Z" fill="#ffcc00" opacity="1"/>
+            </g>
         </g>
     </g>
     '''
