@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HEADER: Custom animated SVG banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:0d1117,30:4c1d95,70:a855f7,100:0d1117&section=header&text=SHAUNAK%20RAHATEKAR&fontSize=42&fontColor=A855F7&animation=fadeIn&fontAlignY=35&desc=AI%20Agent%20Developer%20%7C%20Full-Stack%20Builder&descSize=16&descColor=8B949E&descAlignY=55" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:2d1b4e,100:0d1117&height=220&section=header&text=Shaunak%20Rahatekar&fontSize=42&fontColor=A855F7&animation=fadeIn&fontAlignY=35&desc=AI%20Agent%20Developer%20%7C%20Full-Stack%20Builder&descSize=16&descColor=8B949E&descAlignY=55" />
 
 <!-- ANIMATED NAME with typing effect -->
 <a href="https://github.com/Shaunak-Rahatekar">
@@ -30,35 +30,21 @@
 
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" height="28px"> &nbsp; About Me
 
-```diff
-+ 🚀 AI Agent Developer & Full Stack Engineer
+<div align="center">
 
-! Building production-grade AI systems
-! Developing intelligent multi-agent workflows
-! Deploying scalable cloud-native applications
-! Creating Flutter & React experiences
-! Exploring MLOps and autonomous systems
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&width=900&height=80&lines=%3E+whoami;%3E+Shaunak+Rahatekar;%3E+AI+Agent+Developer;%3E+Full-Stack+Engineer;%3E+Building+Production+AI+Systems;%3E+Learning+Multi-Agent+Orchestration" />
 
-# Current Goal:
-> Build AI products that solve real-world problems at scale.
+<br><br>
 
-# Fun Fact:
-> I built an AI Yoga Instructor before most people finished their to-do apps 🧘
-```
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shaunak-Rahatekar&theme=tokyonight"/>
 
+<br><br>
 
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shaunak-Rahatekar&theme=tokyonight"/>
 
-```yaml
-name: Shaunak Rahatekar
-role: AI Agent Developer & Full-Stack Engineer
-focus:
-  - Building autonomous AI agents with Google ADK & LangChain
-  - Cross-platform apps with Flutter & React
-  - Cloud-native deployments on Google Cloud Platform
-currently_building: Global Supply Chain Intelligence Agent
-learning: Advanced multi-agent orchestration & MLOps
-fun_fact: I build AI that does yoga 🧘 and tracks expenses 💰
-```
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shaunak-Rahatekar&theme=tokyonight&utcOffset=5.5"/>
+
+</div>
 
 <br/>
 
